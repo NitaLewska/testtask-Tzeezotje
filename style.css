@@ -1,5 +1,6 @@
-/* Box Model Fix */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Box Model Fix */
 
 html {
   box-sizing: border-box;
@@ -13,9 +14,32 @@ html {
   margin: 0px;
 }
 
+/* Remodal */
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  text-align: center;
+}
+
+#modal1Title{
+  margin: 20px;
+}
+
+input.btn {
+  width: 100px;
+  display: block;
+  margin: 30px auto;
+}
+
+
+/* MAIN STYLES */
+
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 /* Header */
@@ -143,6 +167,9 @@ body {
   transition: 500ms;
   will-change: transform;
   z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .button:hover {
@@ -402,9 +429,10 @@ body {
 /* Gallery*/
 
 .gallery {
-  height: 605px;
+  height:fit-content;
   background: #3a4574;
   padding-top: 70px;
+  padding-bottom: 50px;
 }
 
 .gallery img.swiper-slide {
@@ -454,7 +482,7 @@ body {
 .gallery .swiper-button-next::after {
   height: 50px;
 }
-
+/* 
 .contacts {
   margin-top: 400px;
   display: flex;
@@ -520,7 +548,7 @@ body {
 .contacts img {
   width: 1170px;
   height: 547px;
-}
+} */
 
 @media (max-width: 1300px) {
   .container {

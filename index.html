@@ -14,7 +14,11 @@
       src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
       async
     ></script>
-    <script src="script.js" async></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" defer></script>
+    <script src="remodal/remodal.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="remodal/remodal.css">
+    <link rel="stylesheet" href="remodal/remodal-default-theme.css">
   </head>
 
   <body>
@@ -44,7 +48,7 @@
         <h1 class="header__h1">
           A bad day with lunch is better than a good day without it.
         </h1>
-        <button class="header__button button">Reserve a table</button>
+        <a class="header__button button" href="#modal">Reserve a table</a>
 
         <div class="header__social-media-links">
           <a href="" class="header__social-media-link">Fb</a>
@@ -216,6 +220,15 @@
         <img src="images/map.png" alt="" />
       </section> -->
     </main>
+    <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+       <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+           <form id="form">
+             <h2 id="modal1Title">Reserve a table</h2>
+             <input type="text" class="putName" name="name" placeholder="Your name" required>
+             <input name="phone" type="tel" class="putPhone" placeholder="Your phone number" required>
+             <input type="submit" name="submit" class="btn" value="Submit">
+         </form>
+     </div>
     <footer></footer>
   </body>
 </html>
