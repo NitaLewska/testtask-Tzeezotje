@@ -19,8 +19,8 @@ var gallerySwiper = new Swiper(".gallerySwiper", {
 });
 
 
-$(document).ready(function () {
-  $("form").submit(function () {
+$(document).jQuery(function () {
+  $("form").on(function () {
       // Получение ID формы
       var formID = $(this).attr('id');
       // Добавление решётки к имени ID
