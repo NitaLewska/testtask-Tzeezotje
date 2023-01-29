@@ -1,6 +1,5 @@
-
-$(document).jQuery(function () {
-    $("form").on(function () {
+$(document).ready(function () {
+    $("form").submit(function () {
         // Получение ID формы
         var formID = $(this).attr('id');
         // Добавление решётки к имени ID
@@ -20,4 +19,4 @@ $(document).jQuery(function () {
         });
         return false;
     });
-  });
+});
