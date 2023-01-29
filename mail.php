@@ -2,9 +2,10 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['name'])) {$name = $_POST['name'];}
     if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
+    if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
 
-    $to = "nita@ya.ru"; 
-    $sendfrom   = "nita@yandex.ru"; 
+    $to = "nita@ya.ru";
+    $sendfrom   = "nita@yandex.ru";
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
