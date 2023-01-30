@@ -560,7 +560,7 @@ body {
   .header{
     min-height: 100vh;
     height: fit-content;
-    padding-bottom: 50px;
+    padding-bottom: 150px;
   }
 
   .header__nav {
