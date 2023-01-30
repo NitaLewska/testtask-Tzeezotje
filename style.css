@@ -557,6 +557,12 @@ body {
 
   /* Header */
 
+  .header{
+    min-height: 100vh;
+    height: fit-content;
+    padding-bottom: 50px;
+  }
+
   .header__nav {
     justify-content: space-between;
   }
@@ -637,6 +643,7 @@ body {
 }
 
 @media (max-width: 1023px) {
+
   .header__nav {
     opacity: 0.95;
   }
@@ -644,6 +651,9 @@ body {
   .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
     display: block;
+  }
+
+  .header .container {
   }
 
   .navbar-container {
