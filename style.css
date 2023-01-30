@@ -560,7 +560,7 @@ body {
   .header{
     min-height: 100vh;
     height: fit-content;
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
 
   .header__nav {
@@ -575,6 +575,10 @@ body {
 
   .header__nav-phone {
     margin-left: 40px;
+  }
+
+  .header__social-media-links {
+    margin-top: -30px;
   }
 
   /* Week menu */
@@ -651,9 +655,6 @@ body {
   .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
     display: block;
-  }
-
-  .header .container {
   }
 
   .navbar-container {
