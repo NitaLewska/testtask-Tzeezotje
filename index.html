@@ -1,236 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tzeezotje</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"
-      defer
-    ></script>
-    <script src="remodal/remodal.min.js" defer></script>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="remodal/remodal.css">
-    <link rel="stylesheet" href="remodal/remodal-default-theme.css">
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container navbar-container">
-        <nav class="header__nav">
-          <img src="images/logo.svg" alt="" class="header__nav-logo" />
-          <input type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <ul class="header__nav-items">
-            <li class="header__nav-item"><a href=""> À la carte</a></li>
-            <li class="header__nav-item"><a href="">Wijnkaart</a></li>
-            <li class="header__nav-item"><a href="">Lunchmenu</a></li>
-            <li class="header__nav-item"><a href="">Contact</a></li>
-          </ul>
-          <a href="" class="header__nav-phone">+32 9 282 57 25</a>
-          <!-- callto/tel -->
-        </nav>
-        <p class="header__schedule">
-          OPEN EVERYDAY
-          <span class="header__schedule-time">6AM - 9PM</span>
-        </p>
-        <h1 class="header__h1">
-          A bad day with lunch is better than a good day without it.
-        </h1>
-        <a class="header__button button" href="#modal">Reserve a table</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tzeezotje</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-        <div class="header__social-media-links">
-          <a href="" class="header__social-media-link">Fb</a>
-          <a href="" class="header__social-media-link">Ig</a>
-          <a href="" class="header__social-media-link">Tw</a>
-          <a href="" class="header__social-media-link">Yt</a>
+<body>
+  <header class="header">
+    <div class="container navbar-container">
+      <nav class="header__nav">
+        <img src="images/logo.svg" alt="" class="header__nav-logo" />
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
         </div>
+        <ul class="header__nav-items">
+          <li class="header__nav-item"><a href=""> À la carte</a></li>
+          <li class="header__nav-item"><a href="">Wijnkaart</a></li>
+          <li class="header__nav-item"><a href="">Lunchmenu</a></li>
+          <li class="header__nav-item"><a href="">Contact</a></li>
+        </ul>
+        <a href="" class="header__nav-phone">+32 9 282 57 25</a>
+        <!-- callto/tel -->
+      </nav>
+      <p class="header__schedule">
+        OPEN EVERYDAY
+        <span class="header__schedule-time">6AM - 9PM</span>
+      </p>
+      <h1 class="header__h1">
+        A bad day with lunch is better than a good day without it.
+      </h1>
+      <a class="header__button button" href="">Reserve a table</a>
+
+      <div class="header__social-media-links">
+        <a href="" class="header__social-media-link">Fb</a>
+        <a href="" class="header__social-media-link">Ig</a>
+        <a href="" class="header__social-media-link">Tw</a>
+        <a href="" class="header__social-media-link">Yt</a>
       </div>
-    </header>
-    <main>
-      <section class="week">
-        <div class="container">
-          <article>
-            <p class="week_day">Woensdag 12/01</p>
-            <p class="week_first_dish">Salade met Serrano</p>
-            <p class="week_second_dish">Steak Tartaar</p>
-          </article>
-          <article>
-            <p class="week_day">Donderdag 13/01</p>
-            <p class="week_first_dish">Toast Roquefort</p>
-            <p class="week_second_dish">Penne met Kip en Prei</p>
-          </article>
-          <article>
-            <p class="week_day">Vrijdag 14/01</p>
-            <p class="week_first_dish">Verrassing van de Chef</p>
-            <p class="week_second_dish">Penne met Kip en Prei</p>
-          </article>
-          <article>
-            <p class="week_day">Vrijdag 15/01</p>
-            <p class="week_first_dish">Verrassing van de Chef</p>
-            <p class="week_second_dish">Penne met Kip en Prei</p>
-          </article>
-          <article>
-            <p class="week_day">Vrijdag 16/01</p>
-            <p class="week_first_dish">Verrassing van de Chef</p>
-            <p class="week_second_dish">Penne met Kip en Prei</p>
-          </article>
-          <img src="images/week_img_2.png" alt="" class="week_img" />
-          <img src="images/week_img_1.png" alt="" class="week_img" />
-        </div>
-      </section>
-      <section class="reviews">
-        <div class="container swiper reviewsSwiper">
-          <div class="swiper-wrapper">
-            <article class="review swiper-slide">
-              <img src="images/commas.svg" alt="" />
-              <h3 class="review_main">
-                Goede service, lekker eten, toffe ambiance
-              </h3>
-              <p class="review_full-text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren.
-              </p>
-              <p class="review_client">ALAIN HEYNDRICKX</p>
-            </article>
-            <article class="review swiper-slide">
-              <img src="images/commas.svg" alt="" />
-              <h3 class="review_main">
-                Goede service, lekker eten, toffe ambiance
-              </h3>
-              <p class="review_full-text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren.
-              </p>
-              <p class="review_client">ALAIN HEYNDRICKX</p>
-            </article>
-            <article class="review swiper-slide">
-              <img src="images/commas.svg" alt="" />
-              <h3 class="review_main">
-                Goede service, lekker eten, toffe ambiance
-              </h3>
-              <p class="review_full-text">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum. Stet clita kasd gubergren.
-              </p>
-              <p class="review_client">ALAIN HEYNDRICKX</p>
-            </article>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </section>
-      <section class="advantages">
-        <div class="container">
-          <article class="advantage">
-            <h2 class="advantage-name">LEKKER ETEN</h2>
-            <p class="advantage-description">
-              Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze
-              zich op hun gemak voelen. Dat is onze filosofie, goed eten in een
-              goede sfeer.
-            </p>
-            <img src="images/meat.png" alt="" class="advantage-img" />
-          </article>
-          <article class="advantage">
-            <img src="images/beer.png" alt="" class="advantage-img" />
-            <h2 class="advantage-name">TOFFE AMBIANCE</h2>
-            <p class="advantage-description">
-              Het creëren van de juiste sfeer is zeer belangrijk voor ons. We
-              nemen onze tijd om te zorgen dat alle elementen bijdragen aan de
-              juiste setting.
-            </p>
-          </article>
-          <article class="advantage">
-            <h2 class="advantage-name">LEKKERE COCKTAILS</h2>
-            <p class="advantage-description">
-              Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten
-              van een onvergetelijke cocktail, een goed gesprek en lekker eten.
-            </p>
-            <img src="images/cocktail.png" alt="" class="advantage-img" />
-          </article>
-        </div>
-      </section>
-      <section class="gallery swiper gallerySwiper">
-        <div class="container">
-          <h2 class="gallery_heading">Sfeerfoto's</h2>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <p class="gallery_description">
-            De beste manier om de sfeer te ervaren is eens langskomen.<br />
-            In tussentijd hebben we hier alvast wat foto’s voor je klaar.
-          </p>
-        </div>
+    </div>
+  </header>
+  <main>
+    <section class="week">
+      <div class="container">
+        <article>
+          <p class="week_day">Woensdag 12/01</p>
+          <p class="week_first_dish">Salade met Serrano</p>
+          <p class="week_second_dish">Steak Tartaar</p>
+        </article>
+        <article>
+          <p class="week_day">Donderdag 13/01</p>
+          <p class="week_first_dish">Toast Roquefort</p>
+          <p class="week_second_dish">Penne met Kip en Prei</p>
+        </article>
+        <article>
+          <p class="week_day">Vrijdag 14/01</p>
+          <p class="week_first_dish">Verrassing van de Chef</p>
+          <p class="week_second_dish">Penne met Kip en Prei</p>
+        </article>
+        <article>
+          <p class="week_day">Vrijdag 15/01</p>
+          <p class="week_first_dish">Verrassing van de Chef</p>
+          <p class="week_second_dish">Penne met Kip en Prei</p>
+        </article>
+        <article>
+          <p class="week_day">Vrijdag 16/01</p>
+          <p class="week_first_dish">Verrassing van de Chef</p>
+          <p class="week_second_dish">Penne met Kip en Prei</p>
+        </article>
+        <img src="images/week_img_2.png" alt="" class="week_img" />
+        <img src="images/week_img_1.png" alt="" class="week_img" />
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container swiper reviewsSwiper">
         <div class="swiper-wrapper">
-          <img class="swiper-slide" src="images/gallery_left.png" />
-          <img class="swiper-slide" src="images/gallery_middle.png" />
-          <img class="swiper-slide" src="images/gallery_right.png" />
-        </div>
-      </section>
-
-      <!--       <section class="contacts">
-        <div class="container contacts_container">
-          <article class="contacts_info">
-            <h2>Contacts</h2>
-            <p class="contact">
-              <span class="contact-type">Phone Number</span> +32 9 282 57 25
+          <article class="review swiper-slide">
+            <img src="images/commas.svg" alt="" />
+            <h3 class="review_main">
+              Goede service, lekker eten, toffe ambiance
+            </h3>
+            <p class="review_full-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren.
             </p>
-            <p class="contact">
-              <span class="contact-type">Email</span>info@email.com
-            </p>
-            <p class="contact">
-              <span class="contact-type">Opening Hours</span>Everyday from 6 AM
-              - 9 PM
-            </p>
-            <p class="contact">
-              <span class="contact-type">Map Street</span>Jl. Raya Surabaya 2787
-            </p>
+            <p class="review_client">ALAIN HEYNDRICKX</p>
           </article>
-          <form action="" class="contacts_form">
-            <h2>have any questions?</h2>
-            <label for="name">Name (4 to 8 characters):</label>
-
-            <input type="text" id="name" name="name" required />
-            <label for="email">Name (4 to 8 characters):</label>
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-            />
-          </form>
+          <article class="review swiper-slide">
+            <img src="images/commas.svg" alt="" />
+            <h3 class="review_main">
+              Goede service, lekker eten, toffe ambiance
+            </h3>
+            <p class="review_full-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren.
+            </p>
+            <p class="review_client">ALAIN HEYNDRICKX</p>
+          </article>
+          <article class="review swiper-slide">
+            <img src="images/commas.svg" alt="" />
+            <h3 class="review_main">
+              Goede service, lekker eten, toffe ambiance
+            </h3>
+            <p class="review_full-text">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+              diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              aliquyam erat, sed diam voluptua. At vero eos et accusam et
+              justo duo dolores et ea rebum. Stet clita kasd gubergren.
+            </p>
+            <p class="review_client">ALAIN HEYNDRICKX</p>
+          </article>
         </div>
-        <img src="images/map.png" alt="" />
-      </section> -->
-    </main>
-    <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
-       <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
-           <form id="form">
-             <h2 id="modal1Title">Reserve a table</h2>
-             <input type="text" class="putName" name="name" placeholder="Your name" required>
-             <input name="phone" type="tel" class="putPhone" placeholder="Your phone number" required>
-             <input type="submit" name="submit" class="btn" value="Submit">
-             <input type="hidden" name="formData" value="Reserved">
-         </form>
-     </div>
-    <footer></footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="script2.js"></script>
-  </body>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <article class="advantage">
+          <h2 class="advantage-name">LEKKER ETEN</h2>
+          <p class="advantage-description">
+            Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze
+            zich op hun gemak voelen. Dat is onze filosofie, goed eten in een
+            goede sfeer.
+          </p>
+          <img src="images/meat.png" alt="" class="advantage-img" />
+        </article>
+        <article class="advantage">
+          <img src="images/beer.png" alt="" class="advantage-img" />
+          <h2 class="advantage-name">TOFFE AMBIANCE</h2>
+          <p class="advantage-description">
+            Het creëren van de juiste sfeer is zeer belangrijk voor ons. We
+            nemen onze tijd om te zorgen dat alle elementen bijdragen aan de
+            juiste setting.
+          </p>
+        </article>
+        <article class="advantage">
+          <h2 class="advantage-name">LEKKERE COCKTAILS</h2>
+          <p class="advantage-description">
+            Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten
+            van een onvergetelijke cocktail, een goed gesprek en lekker eten.
+          </p>
+          <img src="images/cocktail.png" alt="" class="advantage-img" />
+        </article>
+      </div>
+    </section>
+    <section class="gallery swiper gallerySwiper">
+      <div class="container">
+        <h2 class="gallery_heading">Sfeerfoto's</h2>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <p class="gallery_description">
+          De beste manier om de sfeer te ervaren is eens langskomen.<br />
+          In tussentijd hebben we hier alvast wat foto’s voor je klaar.
+        </p>
+      </div>
+      <div class="swiper-wrapper">
+        <img class="swiper-slide" src="images/gallery_left.png" />
+        <img class="swiper-slide" src="images/gallery_middle.png" />
+        <img class="swiper-slide" src="images/gallery_right.png" />
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="container contacts_container">
+        <article class="contacts_info">
+          <h2>Contacts</h2>
+          <p class="contact">
+            <span class="contact-type">Phone Number</span> +32 9 282 57 25
+          </p>
+          <p class="contact">
+            <span class="contact-type">Email</span>info@email.com
+          </p>
+          <p class="contact">
+            <span class="contact-type">Opening Hours</span>Everyday from 6 AM
+            - 9 PM
+          </p>
+          <p class="contact">
+            <span class="contact-type">Map Street</span>Jl. Raya Surabaya 2787
+          </p>
+        </article>
+        <form action="" class="contacts_form">
+          <h2>have any questions?</h2>
+          <label for="name" class="contacts_form__name">Name
+            <input type="text" id="name" name="name" required /></label>
+          <label for="email" class="contacts_form__email">Email
+            <input type="email" id="email" name="email" required /></label>
+          <label for="email" class="contacts_form__request">Speciale Request
+            <input type="email" id="email" name="email" required /></label>
+          <a class="contacts__button button" href="">Reserve a table</a>
+        </form>
+      </div>
+      <img src="images/map.png" alt="" />
+    </section>
+  </main>
+  <footer class="container">
+    <img src="images/logo-footer.svg" alt="" class="footer__nav-logo" />
+    <div class="footer__social-media-links">
+      <a href="" class="footer__social-media-link">Fb</a>
+      <a href="" class="footer__social-media-link">Ig</a>
+      <a href="" class="footer__social-media-link">Tw</a>
+      <a href="" class="footer__social-media-link">Yt</a>
+    </div>
+  </footer>
+</body>
+
 </html>
